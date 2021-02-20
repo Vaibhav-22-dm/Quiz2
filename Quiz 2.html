@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body{
+            background: url("C:/Users/lenovo/Downloads/pexels-pixabay-355952 (1).jpg") center no-repeat;
+            
+            
+        }
+
+
+
+        .container{
+            display: flex;
+            position: fixed;
+            top: 172px;
+            left: 301px;
+            width: 930px;
+            flex-direction: column;
+            background: rgb(246, 250, 246, 0.6);
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+            outline-style:ridge ;
+
+        }
+
+        #head{
+            display: flex;
+            flex-direction: row;
+            
+            
+        }
+
+        #box1{
+            background: rgb(28, 197, 240, 0.5);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(237, 245, 240);
+            padding-left: 2.2em;
+            width: 80%;
+            padding-top: 20px;
+        }
+
+        #box2{
+            background: rgb(28, 197, 240, 0.5);
+            color: rgb(252, 252, 253);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 20%;
+            padding: 1.2em 1.7em;
+            font-weight: bolder;
+            font-size: 20px;
+
+
+        }
+
+        #Q1{
+            color: white;
+        }
+
+        #question1{
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #box3{
+            padding-left: 1.2em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: cornsilk;
+            font-size: 30px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+
+        }
+
+        #box_3{
+            padding-left: 1.2em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: cornsilk;
+            font-size: 30px;
+
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        ul li{
+            background: rgba(28, 197, 240, 0.5);
+            
+            
+            padding: 1em 1em;
+            margin: 1em 0.1em;
+            width: 50%;
+            color: rgb(239, 243, 239);
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        }
+
+        #foot{
+            display: flex;
+            flex-direction: row;
+            margin-left: 40px;
+           
+            max-width: min-content;
+            margin-bottom: 20px;
+        
+            
+        }
+                 
+        button{
+            padding: 2px 2px;
+            color: rgb(250, 252, 253);
+            background: rgba(44, 172, 231, 0.5);
+            border: none;
+            margin: 2px;
+            font-weight: bolder;
+            padding: 10px;
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+            
+
+            
+        }
+
+        
+
+       
+            
+        
+
+        button:hover{
+            background: rgb(245, 248, 250);
+            color: rgb(5, 4, 4);
+            height: 2.5rem;
+            width: 2.5rem;
+
+        }
+
+        #question2{
+            display: none;
+            flex-direction: column;
+
+        }
+
+        .option:hover{
+            color: white;
+            background: rgb(0, 1, 2);
+            
+        }
+
+        header{
+            background: rgb(249, 252, 249, 0.4);
+            margin: 0px;
+            height: 59px;
+        
+        
+        }
+
+        header h1{
+            font: italic bold "Times New Roman" ;
+            position: absolute;
+            left: 20px;
+            top: 9px;
+            color: white;
+        }
+
+        header ul{
+            position: relative;
+            left: 74%;
+            top: 20px;
+
+        }
+
+        header ul li{
+            display: inline;
+            color: rgb(248, 244, 244);
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
+
+        header ul li:hover{
+            color: white;
+            cursor: pointer;
+            background-color: black;
+            
+        }
+
+       
+
+
+        
+
+
+
+        
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Quizophrenia</h1>
+        <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+
+  
+
+    <div class="container" id="main">
+        <div id="head">
+        <div class="box" id="box1">
+            <h2>General Knowledge Quiz</h2>
+        </div>
+        <div class="box" id="box2">CountDown</div>
+        </div>
+        <div id="question1">
+        <div class="box" id="box3">
+            <h3 id="Q1">Q1)  Which is the most valued company in the world?</h3>
+        </div>
+        <div class="box" id="box4">
+            <ul>
+            <li class="option" id="opt1">Apple</li>
+            <li class="option" id="opt2">Tesla</li>
+            <li class="option" id="opt3">Facebook</li>
+            <li class="option" id="opt4">Microsoft</li>
+            </ul>
+        </div>
+        </div>
+        <div id="foot">
+        <div class="box" id="box5">
+            <button id="q1" onclick="nextFtn1()">Q1</button>
+        </div>
+        <div class="box" id="box6">
+            <button id="q2" onclick="nextFtn2()">Q2</button>
+        </div>
+        <div class="box" id="box6">
+            <button id="q3" onclick="nextFtn3()">Q3</button>
+        </div>
+        <div class="box" id="box6">
+            <button id="q4" onclick="nextFtn4()">Q4</button>
+        </div>
+        <div class="box" id="box6">
+            <button id="q5" onclick="nextFtn5()">Q5</button>
+        </div>
+    </div>
+    </div>
+    
+</body>
+
+<script>
+    /*var questions = [
+        {
+            id: q1,
+            question: "Which is the most valued company in the world?",
+            answer: "Apple",
+            options: [
+                "Apple",
+                "Tesla",
+                "Facebook",
+                "Microsoft"
+            ]
+        },
+
+        {
+            id: q2,
+            question: "Q2) What is the Fullform of 'SQL'? ( 2 marks)",
+            answer: "Structured Query Language",
+            options: [
+                "Sequential Query Language",
+                "Structured Question Language",
+                "Structured Query Language",
+                "Structured Query List"
+            ]
+        },
+
+        {
+            id: q3,
+            question: "Q3) Who is the founder of Microsoft? ( 2 marks)",
+            answer: "Bill Gates",
+            options: [
+                "Tim Cook",
+                "Larry Page",
+                "Mark Zuckerberg",
+                "Bill Gates"
+
+            ]
+
+        },
+
+        {
+            id: q4,
+            question: "Q4) Which is not a Volkswagen brand? ( 2 marks)",
+            answer: "LandRover",
+            options: [
+                "Porsche",
+                "LandRover",
+                "Buggati",
+                "Audi"
+
+            ]
+        },
+
+        {
+            id: q5,
+            question: "Q4) Which country has won 5 ODI World Cups? ( 2 marks)",
+            answer: "Australia",
+            options: [
+                "India",
+                "Srilanka",
+                "West Indies",
+                "Australia"
+            ]
+        }
+    ]; */
+
+    var qset = [
+            "Q1) Which is the most valued company in the world?",
+            
+            "Q2) What is the Fullform of 'SQL'?",
+
+            "Q3) Who is the founder of Microsoft? ",
+
+            "Q4) Which is not a Volkswagen brand?",
+           
+            "Q5) Which country has won 5 ODI World Cups?"];
+
+        var opt1 = ["Apple","Tesla","Facebook","Microsoft"];
+            opt2 = ["Sequential Query Language","Structured Question Language","Structured Query Language","Structured Query List"];
+            opt3 = ["Tim Cook","Larry Page","Mark Zuckerberg","Bill Gates"];
+            opt4 = ["Porsche","LandRover","Buggati","Audi"];
+            opt5 = ["India","Srilanka","West Indies","Australia"]
+        
+
+    
+
+        function nextFtn1(){
+
+        document.getElementById("Q1").innerHTML=qset[0];
+        document.getElementById("opt1").innerHTML=opt1[0];
+        document.getElementById("opt2").innerHTML=opt1[1];
+        document.getElementById("opt3").innerHTML=opt1[2];
+        document.getElementById("opt4").innerHTML=opt1[3];
+
+        };
+
+        function nextFtn2(){
+
+        document.getElementById("Q1").innerHTML=qset[1];
+        document.getElementById("opt1").innerHTML=opt2[0];
+        document.getElementById("opt2").innerHTML=opt2[1];
+        document.getElementById("opt3").innerHTML=opt2[2];
+        document.getElementById("opt4").innerHTML=opt2[3];
+        };
+
+        function nextFtn3(){
+
+        document.getElementById("Q1").innerHTML=qset[2];
+        document.getElementById("opt1").innerHTML=opt3[0];
+        document.getElementById("opt2").innerHTML=opt3[1];
+        document.getElementById("opt3").innerHTML=opt3[2];
+        document.getElementById("opt4").innerHTML=opt3[3];
+        };
+
+        function nextFtn4(){
+
+        document.getElementById("Q1").innerHTML=qset[3];
+        document.getElementById("opt1").innerHTML=opt4[0];
+        document.getElementById("opt2").innerHTML=opt4[1];
+        document.getElementById("opt3").innerHTML=opt4[2];
+        document.getElementById("opt4").innerHTML=opt4[3];
+        };
+
+        
+
+        function nextFtn5(){
+
+        document.getElementById("Q1").innerHTML=qset[4]
+        document.getElementById("opt1").innerHTML=opt5[0];
+        document.getElementById("opt2").innerHTML=opt5[1];
+        document.getElementById("opt3").innerHTML=opt5[2];
+        document.getElementById("opt4").innerHTML=opt5[3];
+        };
+
+   
+
+    
+
+</script>
+</html>
